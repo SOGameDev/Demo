@@ -23,7 +23,7 @@
 
         private void FixedUpdate()
         {
-            Vector2 heading = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            Vector2 heading = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             rb.AddForce(speed*heading, ForceMode2D.Impulse);
         }
     }
