@@ -16,6 +16,8 @@
 
         private Rigidbody2D rb;
 
+        private Vector2 heading;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -24,8 +26,12 @@
 
         private void FixedUpdate()
         {
-            Vector2 heading = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
             rb.AddForce(speed*heading, ForceMode2D.Impulse);
+        }
+
+        private void Update()
+        {
+            heading = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         }
     }
 }
