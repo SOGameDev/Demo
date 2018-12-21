@@ -23,9 +23,8 @@
 
         private void FixedUpdate()
         {
-            float horizontal = Input.GetAxis("Horizontal");
-            float vertical = Input.GetAxis("Vertical");
-            rb.AddForce(speed*(new Vector2(horizontal, vertical)), ForceMode2D.Impulse);
+            Vector2 heading = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            rb.AddForce(speed*heading, ForceMode2D.Impulse);
         }
     }
 }
