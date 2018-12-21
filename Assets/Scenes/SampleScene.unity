@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 1001159507}
   - component: {fileID: 1001159508}
   m_Layer: 0
-  m_Name: frog
+  m_Name: Frog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 1015685694}
   - component: {fileID: 1015685695}
   m_Layer: 0
-  m_Name: bear
+  m_Name: Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
