@@ -6,6 +6,7 @@
     /// <summary>
     ///     Allows the player to control this game object with the horizontal and vertical axis.
     /// </summary>
+    [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerControlled : MonoBehaviour
     {
         /// <summary>
