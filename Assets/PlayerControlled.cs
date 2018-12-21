@@ -2,12 +2,17 @@
 {
     using UnityEngine;
 
+    /// <summary>
+    ///     Allows the player to control this game object with the horizontal and vertical axis.
+    /// </summary>
     public class PlayerControlled : MonoBehaviour
     {
+        /// <summary>
+        ///     The speed that the character should move at.
+        /// </summary>
         public float speed;
-
-        // Update is called once per frame
-        void Update()
+        
+        private void Update()
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
