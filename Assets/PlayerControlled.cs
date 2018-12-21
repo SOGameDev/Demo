@@ -12,7 +12,7 @@
         /// </summary>
         public float speed = 0.15f;
         
-        private void Update()
+        private void FixedUpdate()
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
