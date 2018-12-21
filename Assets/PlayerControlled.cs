@@ -10,7 +10,7 @@
         /// <summary>
         ///     The speed that the character should move at.
         /// </summary>
-        public float speed;
+        public float speed = 0.15f;
         
         private void Update()
         {
