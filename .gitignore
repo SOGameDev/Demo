@@ -46,3 +46,4 @@ results.xml
 /Assets/InitTestScene*.unity.meta
 editor.log
 /Logs/
+.vscode/
